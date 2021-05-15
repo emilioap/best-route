@@ -146,9 +146,10 @@ namespace BestRoute.Service
 
         private string GetFilePath(string dataSource)
         {
+
             string path = Directory
-                .GetParent(Environment.CurrentDirectory).ToString().Split("BestRoute\\")[0];
-            return Path.Combine(path, string.Concat("BestRoute\\Repository\\", dataSource));
+                .GetParent(AppContext.BaseDirectory).ToString().Split("best-route\\")[0];
+            return Path.Combine(path, string.Concat("best-route\\Repository\\", dataSource));
         }
 
         private void BuildShortestPath(LinkedList<Node> list, Node node)
