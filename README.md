@@ -7,12 +7,13 @@ The solution structure is divided by 5 projects based on DDD :
 2. WebApi (Rest API to get best routes and update datasource - more info in Swagger)
 3. Domain (Class library containing models to share and interfaces for DI)
 4. Service (Class library with business implementations)
-5. Tests (Unit tests made by xUnit)
+5. Tests (Unit tests made with xUnit)
 
 # Getting Started
 
 - Begin by cloning this repository
 - Install the version .NET 5.0 for your OS (https://dotnet.microsoft.com/download/dotnet/5.0)
+- Add your input files in CSV format at YOUR_DIR\best-route\Repository
 
 # Running
 
